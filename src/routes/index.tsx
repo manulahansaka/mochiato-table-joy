@@ -44,7 +44,7 @@ function Index() {
   return (
     <>
       {/* HERO */}
-      <section className="relative h-[92vh] min-h-[600px] w-full overflow-hidden">
+      <section className="relative flex min-h-[100svh] w-full items-center overflow-hidden py-20 sm:py-24">
         <img
           src={heroImg}
           alt="Mochiato Gampaha — craft coffee and food"
@@ -55,46 +55,46 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-to-b from-espresso/75 via-espresso/55 to-espresso/95" />
         <div className="absolute inset-0 grain opacity-40" />
 
-        <div className="relative z-10 mx-auto flex h-full max-w-5xl flex-col items-center justify-center px-5 text-center text-cream animate-fade-in">
-          <p className="mb-4 text-[10px] uppercase tracking-[0.5em] text-primary/90 md:text-xs">
+        <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center px-4 text-center text-cream animate-fade-in sm:px-6">
+          <p className="mb-3 text-[9px] uppercase tracking-[0.4em] text-primary/90 sm:mb-4 sm:text-[10px] sm:tracking-[0.5em] md:text-xs">
             ☕  Gampaha · Sri Lanka  ☕
           </p>
-          <h1 className="font-display text-6xl font-bold text-balance md:text-8xl">
+          <h1 className="font-display text-5xl font-bold text-balance sm:text-6xl md:text-7xl lg:text-8xl">
             Mochiato<span className="text-primary">.</span>
           </h1>
-          <p className="mt-5 max-w-xl font-display text-xl italic text-cream/90 md:text-2xl">
+          <p className="mt-4 max-w-xl font-display text-lg italic text-cream/90 sm:mt-5 sm:text-xl md:text-2xl">
             Where Coffee Meets Comfort Food
           </p>
-          <p className="mt-4 max-w-md text-sm text-cream/70 md:text-base">
+          <p className="mt-3 max-w-md text-xs text-cream/70 sm:mt-4 sm:text-sm md:text-base">
             Craft espresso, sizzling shawarma, juicy burgers and quiet study tables —
             all under one roof.
           </p>
 
-          <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
+          <div className="mt-8 flex w-full max-w-sm flex-col items-stretch gap-3 sm:mt-10 sm:w-auto sm:max-w-none sm:flex-row sm:gap-4">
             <Link
               to="/menu"
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-primary-foreground shadow-2xl shadow-primary/40 transition-all hover:scale-105 hover:bg-primary/90"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-primary-foreground shadow-2xl shadow-primary/40 transition-all hover:scale-105 hover:bg-primary/90 sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.2em]"
             >
               View Menu →
             </Link>
             <Link
               to="/reservations"
-              className="inline-flex items-center gap-2 rounded-full border border-cream/40 bg-cream/5 px-8 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-cream backdrop-blur-sm transition-all hover:scale-105 hover:bg-cream/15"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-cream/40 bg-cream/5 px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-cream backdrop-blur-sm transition-all hover:scale-105 hover:bg-cream/15 sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.2em]"
             >
               Reserve a Table
             </Link>
           </div>
 
-          <div className="mt-12 flex items-center gap-6 text-xs uppercase tracking-[0.3em] text-cream/60">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[10px] uppercase tracking-[0.25em] text-cream/60 sm:gap-x-6 sm:text-xs sm:tracking-[0.3em]">
             <span>Open Daily</span>
             <span className="h-1 w-1 rounded-full bg-primary" />
             <span>Hourly Tables</span>
-            <span className="hidden h-1 w-1 rounded-full bg-primary sm:inline-block" />
-            <span className="hidden sm:inline">Dine-In · Takeaway</span>
+            <span className="h-1 w-1 rounded-full bg-primary" />
+            <span>Dine-In · Takeaway</span>
           </div>
         </div>
 
-        <div className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2 text-cream/60 animate-bounce">
+        <div className="absolute bottom-4 left-1/2 z-10 hidden -translate-x-1/2 text-cream/60 animate-bounce sm:block">
           <span className="text-2xl">↓</span>
         </div>
       </section>
